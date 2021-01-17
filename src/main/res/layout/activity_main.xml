@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#090C80"
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:onClick="gotoincome"
+            android:layout_weight="50"
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"></ImageButton>
+
+        <ImageButton
+            android:onClick="gotooutcome"
+            android:layout_weight="50"
+            android:id="@+id/btnsub"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sub"></ImageButton>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_margin="12dp"
+                android:background="#1BDB23"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حصول"
+                android:textSize="20dp"
+                android:id="@+id/txtincome"
+                ></TextView>
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtafghani"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtincome"
+                android:layout_toRightOf="@+id/btnafghani"
+                android:text="TextView" />
+
+            <Button
+
+                android:textStyle="bold"
+                android:layout_below="@+id/txtincome"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="افغانی"
+                android:id="@+id/btnafghani"
+                ></Button>
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtdolor"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtafghani"
+                android:layout_toRightOf="@+id/btndolor"
+                android:text="TextView" />
+
+
+
+            <Button
+                android:textStyle="bold"
+                android:layout_below="@+id/btnafghani"
+                android:id="@+id/btndolor"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="ډالر" />
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtrs"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtdolor"
+                android:layout_toRightOf="@+id/btnrs"
+                android:text="TextView" />
+
+
+
+            <Button
+                android:textStyle="bold"
+                android:layout_below="@+id/btndolor"
+                android:id="@+id/btnrs"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="کلدارې" />
+
+            <TextView
+                android:textColor="#FFFF"
+                android:layout_margin="12dp"
+                android:background="#D12013"
+                android:layout_below="@+id/btnrs"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مصرف"
+                android:textSize="20dp"
+                android:id="@+id/txtoutcome"
+                ></TextView>
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtafghanio"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtoutcome"
+                android:layout_toRightOf="@+id/btnafghanio"
+                android:text="TextView" />
+
+            <Button
+                android:textStyle="bold"
+                android:layout_below="@+id/txtoutcome"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="افغانی"
+                android:id="@+id/btnafghanio"
+                ></Button>
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/btndoloro"
+                android:id="@+id/txtdoloro"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtafghanio"
+                android:text="TextView" />
+
+
+
+            <Button
+                android:textStyle="bold"
+                android:layout_below="@+id/btnafghanio"
+                android:id="@+id/btndoloro"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="ډالر" />
+
+            <TextView
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtrso"
+                android:layout_width="323dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txtdoloro"
+                android:layout_toRightOf="@+id/btnrso"
+                android:text="TextView" />
+
+
+
+            <Button
+                android:textStyle="bold"
+                android:layout_below="@+id/btndoloro"
+                android:id="@+id/btnrso"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="کلدارې" />
+
+            <Button
+                android:onClick="goTochart"
+                android:layout_below="@+id/btnrso"
+                android:id="@+id/btnchart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chart" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

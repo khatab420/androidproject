@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#090C80"
+    tools:context=".Income">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9332"
+
+        >
+
+
+
+
+    <EditText
+        android:hint="د مصرف کوونکی نوم ولیکی"
+        android:id="@+id/editTextname"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+
+        android:background="#FFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_margin="12dp"
+        />
+
+    <TextView
+        android:textColor="#FFFF"
+        android:layout_margin="12dp"
+        android:id="@+id/textViewname"
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:layout_toRightOf="@+id/editTextname"
+        android:text="بودیجه ورکوونکی" />
+
+
+    <EditText
+        android:id="@+id/editTextcount"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+
+        android:background="#FFFF"
+
+        android:layout_below="@+id/editTextname"
+        android:layout_margin="12dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:textColor="#FFFF"
+        android:layout_margin="12dp"
+        android:id="@+id/textViewcount"
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:layout_toRightOf="@+id/editTextcount"
+        android:layout_below="@+id/textViewname"
+        android:text="د پیسو مقدار" />
+
+    <RadioGroup
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:id="@+id/redioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FFFF"
+        android:ems="10"
+        android:layout_below="@+id/editTextcount"
+       android:layout_margin="12dp"
+
+
+
+
+
+
+
+
+
+        >
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/rdafg"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="AFN"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rs"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_margin="10dp"
+
+            android:text="RS"></RadioButton>
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="USD"
+            android:id="@+id/us"
+            ></RadioButton>
+
+    </RadioGroup>
+
+
+
+
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+            android:padding="10dp"
+            android:onClick="insertintoincome"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذخیره" />
+            <ScrollView
+                android:padding="15dp"
+                android:layout_below="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <TextView
+
+
+
+
+
+            android:id="@+id/textViewshow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:textColor="#FFFF"
+            android:padding="12dp"
+            android:gravity="right"
+            android:background="#9332"
+            android:layout_margin="25dp"
+
+            />
+
+    </ScrollView>
+        </LinearLayout>
+</LinearLayout>

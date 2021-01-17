@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#090C80"
+    android:padding="16dp"
+    tools:context=".Income">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+
+            android:hint="د مصرف تشریحات"
+            android:id="@+id/editTextname_out"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_margin="12dp"
+            android:background="#FFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            />
+
+        <TextView
+            android:textColor="#FFFF"
+            android:layout_margin="12dp"
+            android:id="@+id/textViewname_out"
+            android:layout_width="198dp"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/editTextname_out"
+            android:text="تشریحات" />
+
+
+        <EditText
+            android:background="#FFFF"
+            android:id="@+id/editTextcount_out"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/editTextname_out"
+            android:layout_margin="12dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_margin="12dp"
+            android:id="@+id/textViewcount_out"
+            android:layout_width="198dp"
+            android:layout_height="44dp"
+            android:textColor="#FFFF"
+            android:layout_toRightOf="@+id/editTextcount_out"
+            android:layout_below="@+id/textViewname_out"
+            android:text="د پیسو مقدار" />
+
+
+        <Spinner
+            android:background="#FFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/editTextforname_out"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/editTextcount_out"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:textColor="#FFFF"
+            android:layout_margin="12dp"
+            android:id="@+id/textViewforname_out"
+            android:layout_width="198dp"
+            android:layout_height="44dp"
+            android:layout_toRightOf="@+id/editTextforname_out"
+            android:layout_below="@+id/textViewcount_out"
+            android:text="د بودیجه ورکوونکی نوم" />
+
+
+        <RadioGroup
+            android:background="#FFFF"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:id="@+id/redioGroup_out"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/editTextforname_out"
+            android:layout_margin="12dp"
+
+            >
+
+            <RadioButton
+
+                android:id="@+id/rdafg_out"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_margin="10dp"
+                android:text="AFN"></RadioButton>
+
+            <RadioButton
+
+                android:id="@+id/rs_out"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_margin="10dp"
+
+                android:text="RS"></RadioButton>
+
+            <RadioButton
+
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:text="USD"
+                android:id="@+id/us_out"
+                ></RadioButton>
+
+        </RadioGroup>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:onClick="insertintooutcome"
+            android:id="@+id/button_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذخیره" />
+
+        <Button
+            android:onClick="moreinformation"
+            android:id="@+id/button_moreinformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جزئیات" />
+        </LinearLayout>
+        <ScrollView
+            android:padding="12dp"
+            android:layout_below="@+id/button_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#FFFF"
+                android:padding="12dp"
+                android:gravity="right"
+                android:background="#9332"
+                android:layout_margin="25dp"
+                android:id="@+id/textViewshow_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

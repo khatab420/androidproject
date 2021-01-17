@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Expense Report</string>
+
+    <string-array name="panets_name">
+        <item>Ali</item>
+        <item>Omar</item>
+        <item>Nasir</item>
+        <item>Mars</item>
+        <item>Hyouter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+
+    </string-array>
+</resources>
